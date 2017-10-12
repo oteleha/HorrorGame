@@ -14,7 +14,7 @@ public class AIMovement : MonoBehaviour {
 	private float timer;
 	private float remainTimer = 5f;
 
-	public Transform lastKnownLocation;
+//	public Transform lastKnownLocation;
 
 	void Start () {
 
@@ -55,8 +55,8 @@ public class AIMovement : MonoBehaviour {
 		Ray detectionRay = detectionScript.detectionRay;//pulling all the raycasts from the detection script
 		Ray detectionRayML = detectionScript.detectionRayML;
 		Ray detectionRayL = detectionScript.detectionRayL;
-		Ray detectionRayMR = detectionScript.detectionRayMR;
 		Ray detectionRayR = detectionScript.detectionRayR;
+		Ray detectionRayMR = detectionScript.detectionRayMR;
 		RaycastHit rayHit;
 
 		//I need to set it up so that the last set known location is destroyed so the agent follows the newest
